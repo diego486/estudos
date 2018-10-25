@@ -1,0 +1,19 @@
+{
+  "name": "udemy",
+  "version": "1.0.0",
+  "description": "pasta de estudos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego486/estudos.git"
+  },
+  "author": "diego alves de campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego486/estudos/issues"
+  },
+  "homepage": "https://github.com/diego486/estudos#readme"
+}
