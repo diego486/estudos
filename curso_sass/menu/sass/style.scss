@@ -1,0 +1,37 @@
+$cor-principal:#a1a1a1;
+$cor-hover: #fff;
+$altura-menu: 40px;
+
+
+body{
+	margin:0px;
+}
+
+#menu{
+	width: 100%;
+	background: $cor-principal;
+	margin:0px;
+	
+	ul{
+		width: 1000px;
+		margin: 0 auto;
+		list-style: none;
+		li{
+			margin: 5px;
+			display: inline;
+			a{
+				line-height: 0;
+				padding: $altura-menu/2 5px;
+				display: inline-block;
+				color:$cor-hover;
+				text-decoration: none;
+
+				&:hover, &:focus{
+					background: $cor-hover;
+					color:$cor-principal;
+				}
+			}
+
+		}
+	}
+}
