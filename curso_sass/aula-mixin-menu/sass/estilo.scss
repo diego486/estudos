@@ -1,0 +1,34 @@
+
+@mixin menu($corfundo,$corhover,$alturamenu){
+
+#menu{
+	width: 100%;
+	background: $corfundo;
+	ul{
+		width: 100%;
+		list-style: none;
+		margin:0 auto;
+		li{
+			display: inline;
+			padding: 5px;
+			a{
+				font:{
+					size:14px;
+					family: fantasy;
+					}
+				color:$corhover;
+				display: inline-block;
+				text-decoration: none;
+				line-height: 0;
+				padding: $alturamenu/2 15px;
+				&:hover{
+					background: $corhover;
+					color:$corfundo;
+				}
+			}
+		}
+	}
+}
+
+}
+@include menu(red,white,30px);
