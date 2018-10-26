@@ -1,0 +1,16 @@
+.body{
+	margin: 0;
+	width: 100%;
+}
+
+$corfundo:#123;
+
+.container{
+	background: $corfundo;
+}
+
+@for $i from 1 to 6{
+	.bg-#{$i}{
+		background:$corfundo*$i+2;
+	}
+}
