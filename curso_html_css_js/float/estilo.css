@@ -1,0 +1,16 @@
+#principal{
+	width: 900px;
+	border: 2px solid red;
+}
+
+.noticia{
+	background-color: #e5e5e5;
+	padding: 5px;
+	width: 280px;
+	margin: 5px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
