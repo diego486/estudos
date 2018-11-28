@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+
+	<script>
+
+	var data = new Date()
+
+	document.write(data.getDate())
+	document.write(data.getMonth()+1)
+	data.setDate(data.getDate()+1)
+	document.write(data)
+
+	document.write('<hr/>')
+
+	var data2 = new Date()
+
+	//adicionar ou remover dias
+
+	document.write(data2.toString())
+	document.write('<br/>')
+	data2.setDate(data2.getDate()+1)
+	document.write(data2)
+	document.write('<hr/>')
+
+
+	//calculos entre datas - AULA 180
+
+	var data3 = new Date(2017,0,15)
+	var data4 = new Date(2017,1,15)
+
+	document.write(data3.toString())
+	document.write('<br/>')
+	document.write(data4.toString())
+
+	document.write('<br/>')
+
+	document.write(data3.getTime())
+	document.write('<br/>')
+	document.write(data4.getTime())
+	document.write('<br/>')
+
+
+	var milissegundos_entre_datas = Math.abs(data3.getTime()-data4.getTime())
+	var milisegundos_por_dia = (1*24*60*60*1000) 
+	document.write(milissegundos_entre_datas)
+
+
+	document.write('<br/>')
+	document.write('1 dia tem: '+milisegundos_por_dia+' milisegundos')
+
+	document.write('<br/>')
+	document.write(Math.ceil(milissegundos_entre_datas/milisegundos_por_dia))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

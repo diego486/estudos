@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+
+	<script>
+
+	num1 = prompt("Informe um numero")
+	num1= parseInt(num1)
+	num2 = prompt("Informe outro numero")
+	num2= parseInt(num2)
+	operacao = prompt("digite soma ou subtracao")
+
+
+
+	/*
+	if(operacao ==='soma'){
+		document.write(soma(num1,num2))
+	}else{
+		document.write(subtracao(num1,num2))
+	}
+
+	function soma(num1,num2){
+		return (num1+num2)
+	}
+
+	function subtracao(num1,num2){
+		return (num1-num2)
+	}*/
+
+	function calc(num1, num2, operacao){
+	num1 = parseFloat(num1)
+	num2 = parseFloat(num2)
+	var resultado = 0;
+
+	if(operacao=='soma'){
+		resultado = num1+num2
+	}
+
+	else{
+		resultado = num1-num2
+	}
+	return resultado
+}
+
+document.write(calc(num1,num2,operacao))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
