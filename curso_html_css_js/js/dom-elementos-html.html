@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+
+
+
+	
+</head>
+<body>
+	
+<h3>Manipulado estilo </h3>
+<input type ="text" id="inp">
+
+</hr>
+<div style ="border:solid 1px black"></div>
+
+
+<script>
+
+
+	var teste = document.getElementById("inp")
+	
+	teste.onfocus=function modifica(){
+		document.getElementById("inp").style.background="#f5f638";
+	}
+
+	teste.onblur=function valida(){
+		var valorCampo = document.getElementById("inp").value;
+
+		if(valorCampo.length <3){
+			document.getElementById("inp").value = "voce digitou menos do que 3 caracteres"
+		}else{
+			document.getElementById("inp").style.background="green"
+		}
+
+	}
+
+
+
+</script>
+
+</body>
+</html>
